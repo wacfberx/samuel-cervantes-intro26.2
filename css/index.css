@@ -1,0 +1,93 @@
+body {
+    background-color: #f1faee;
+    color: #1d3557;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* this controls the navigation */
+
+nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: #e63946;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #457b9d;
+}
+
+/* this controls my name */
+
+h1 {
+    color: #1d3557;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* this controls the headings */
+
+h2 {
+    color: #e63946;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* this controls the sections */
+
+section {
+    margin-bottom: 35px;
+}
+
+/* this changes the alignment of my about section */
+
+#About {
+    text-align: center;
+}
+
+/* this controls the paragraphs */
+
+p {
+    line-height: 1.5;
+}
+
+/* this controls the lists */
+
+.basic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.basic-list li {
+    background-color: #a8dadc;
+    padding: 12px;
+    list-style-type: none;
+}
+
+/* connect */
+
+.connect-list {
+    display: flex;
+    gap: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.connect-list a {
+    background-color: #457b9d;
+    color: #f1faee;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.connect-list a:hover {
+    background-color: #e63946;
+}
