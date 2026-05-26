@@ -106,3 +106,101 @@ p {
     padding: 12px;
     color: #1d3557;
 }
+
+
+
+/* this controls the message form */
+
+#leave-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+}
+
+#leave-message label {
+    font-weight: bold;
+    color: #1d3557;
+}
+
+#leave-message input,
+#leave-message textarea {
+    padding: 12px;
+    border: 2px solid #a8dadc;
+    background-color: white;
+    color: #1d3557;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#leave-message input:focus,
+#leave-message textarea:focus {
+    outline: none;
+    border-color: #457b9d;
+}
+
+#leave-message textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#leave-message button {
+    width: fit-content;
+    padding: 10px 18px;
+    background-color: #457b9d;
+    color: #f1faee;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#leave-message button:hover {
+    background-color: #e63946;
+}
+
+/* this controls the message section */
+
+#messages ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#messages li {
+    background-color: #a8dadc;
+    padding: 12px;
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    color: #1d3557;
+}
+
+#messages a {
+    color: #1d3557;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#messages a:hover {
+    color: #e63946;
+}
+
+#messages span {
+    flex-grow: 1;
+}
+
+#messages button {
+    background-color: #e63946;
+    color: #f1faee;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#messages button:hover {
+    background-color: #457b9d;
+}
