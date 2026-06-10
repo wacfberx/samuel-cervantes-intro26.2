@@ -89,3 +89,53 @@ messageForm.addEventListener("submit", function(event) {
   messageForm.reset();
 
 });
+
+
+/*
+   Fetch GitHub Repositories
+*/
+
+fetch("https://api.github.com/users/wacfberx/repos")
+  .then(response => {
+
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+
+    return response.json();
+  })
+
+  .then(data => {
+
+    const repositories = data;
+
+    console.log(repositories);
+
+    const projectSection = document.querySelector("#Projects");
+
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+
+      const project = document.createElement("li");
+
+      project.innerText = repositories[i].name;
+
+      projectList.appendChild(project);
+
+    }
+
+  })
+
+  .catch(error => {
+
+    console.error(error);
+
+    const projectSection = document.querySelector("#Projects");
+
+    projectSection.innerHTML +=
+      "<p>Unable to load GitHub repositories.</p>";
+
+  });
+
+  
