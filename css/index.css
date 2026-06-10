@@ -204,3 +204,19 @@ p {
 #messages button:hover {
     background-color: #457b9d;
 }
+
+
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.projects-list li {
+    background-color: #a8dadc;
+    padding: 12px;
+    color: #1d3557;
+}
